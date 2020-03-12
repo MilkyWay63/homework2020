@@ -1,5 +1,5 @@
-function capitalizeFirstLetter(string) {
-    return string.charAt(0).toUpperCase() + string.slice(1);
+function capitalizeFirstLetter(string, first) {
+    return string.slice(0,first) + string.charAt(first).toUpperCase() + string.slice(first+1);
 }
 function isLetter(str) {
     return str.toLowerCase() != str.toUpperCase();
@@ -7,28 +7,28 @@ function isLetter(str) {
 
 function toTitleCase(str, d = '') {
 
-        let words = str.split(d);
+    let words = str.split(d);
 
-	for (let i in words) {
-        let add_first = false;
+    for (let i in words) {
+//let add_first = false;
+        f = 0;
 
-        if (isLetter(words[i].charAt(0)) == false) {
-            add_first = words[i].charAt(0);
-
-			words[i] = words[i].slice(1);
+        for (j = 0; j < words[i].length; j++) {
+            if (isLetter(words[i].charAt(j)) == true) {
+//add_first = words[i].charAt(j);
+                f = j;
+                break;
+            }
         }
-        for (j=0; ; j++) {
-            if (isLetter (words[i].charAt(j)) == false) {...}
-            break;
-        }
-        words[i] = capitalizeFirstLetter(words[i]);
 
-		if (add_first) {
-            words[i] = add_first + words[i];
-        }
+        words[i] = capitalizeFirstLetter(words[i], f);
+
+//if (add_first) {
+// words[i] = add_first + words[i];
+//}
     }
 
-	return words.join(d);
+    return words.join(d);
 }
 
 let str = 'Lorem ipsum dolor sit amet,    consectetur adipisicing elit,\n\tsed do eiusmod';
@@ -58,6 +58,7 @@ console.log(calcNumbers(9, 18, 3));
 
 // Parašykite funkciją, kuri priima kaip parametrą skaičių nuo 1 iki 7, o grąžina savaitės dieną lietuvių kalba.
 function dayOfWeekAsString(dayIndex) {
+    dayIndex=dayIndex-1;
     return ["Pirmadienis", "Antradienis", "Treciadienis", "Ketvirtadienis", "Penktadienis", "Sestadienis", "Sekmadienis"][dayIndex];
 }
 console.log(dayOfWeekAsString(1));
