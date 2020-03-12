@@ -18,7 +18,7 @@ let object1= {
     a:1,
     b:2,
     c:3
-}
+};
 console.log(object1['c']);
 console.log(object1.c);
 // Sukurkite objektą su savaitės dienomis. Raktai jame turėtų būti dienų skaičiai nuo savaitės pradžios (pirmadienis - pirmasis ir t.t.). Parodykite dabartinę savaitės dieną.
@@ -30,7 +30,7 @@ let weekdays= {
     5:"Friday",
     6:"Saturday",
     7:"Sunday"
-}
+};
 console.log(weekdays['4']);
 // Sukurkite kintamjį day kuriame saugomas savaitės dienos numeris. Atspausdinkite savaitės dieną naudojant sita kintamajį.
 let day = new Date();
@@ -93,12 +93,8 @@ array10.splice(1, 2);
 console.log(array10);
 // For ir While
 // Atspausdinkite skaičių stulpelį nuo 1 iki 100.
-var points = new Array(100);
-for (var i = 0; i < 100; i++) {
-    points[i] = i + 1;
-}
-for (var i = 0; i < points.length; i++) {
-    console.log(points[i]);
+for (let i = 0; i <=100; i++) {
+    console.log(i);
 }
 // Atspausdinkite skaičių stulpelį nuo 11 iki 33.
 var points1 = new Array(33);
@@ -109,25 +105,24 @@ for (var i = 0; i < points1.length; i++) {
     console.log(points1[i]);
 }
 // Atspausdinkite stulpelį su lyginiais skaičiais nuo 0 iki 100.
-for (var i = 2; i < 100; i += 2) {
+for (var i = 0; i < 100; i += 2) {
     console.log(i)
 }
 //Naudodami ciklą parodykite sumą nuo 1 iki 100.
-var nums=new Array(100);
 var total=0;
 for (var i = 0; i < 100; i++) {
     total += i;
 }
 console.log(total);
 //Duotas masyvas su elementais [1, 2, 3, 4, 5]. Parodykite visus masyvo elementus ekrane.
-array11=[1, 2, 3, 4, 5];
+array11=[1, 2, 3, 4, 6];
 for (i = 0; i < array11.length; i++) {
-    document.write(i +1+", ");
+    document.write(array11[i]);
 }
 //Duotas masyvas su elementais [1, 2, 3, 4, 5]. Parodykite šio masyvo elementų sumą.
 var total1=0;
 for (var i = 0; i < array11.length; i++) {
-    total1 += +array11[1];
+    total1 += +array11[i];
 }
 console.log(total1);
 //Duotas objektas green: žalia, red: raudona, blue: mėlyna. Parodykite šio objekto raktus ir elementus.
@@ -152,7 +147,7 @@ for (const property in array13) {
 // Duotas masyvas su elementais 2, 5, 9, 15, 0, 4. Naudodami for ir if parodykite masyvo elementus kurie yra daugiau nei 3, bet mažiau nei 10
 const array14=[2, 5, 9, 15, 0, 4];
 for (const element of array14) {
-    if(element<10 && element>3) {
+    if(element>3 && element<10) {
         console.log(element);
     }
 }
@@ -188,3 +183,9 @@ const array17={
 for (const property in array17) {
     console.log(`${property} yra ${array17[property]}`)
 }
+ari=[1, 2, 3, 4, 5];
+let i=0
+for(i in ari) {
+    i=ari[4],ari [3],ari [2],ari [1],ari [0]
+};
+console.log(i);
