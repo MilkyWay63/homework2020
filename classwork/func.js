@@ -2,7 +2,7 @@ function capitalizeFirstLetter(string, first) {
     return string.slice(0,first) + string.charAt(first).toUpperCase() + string.slice(first+1);
 }
 function isLetter(str) {
-    return str.toLowerCase() != str.toUpperCase();
+    return str.toLowerCase() !== str.toUpperCase();
 }
 
 function toTitleCase(str, d = '') {
@@ -14,7 +14,7 @@ function toTitleCase(str, d = '') {
         f = 0;
 
         for (j = 0; j < words[i].length; j++) {
-            if (isLetter(words[i].charAt(j)) == true) {
+            if (isLetter(words[i].charAt(j)) === true) {
 //add_first = words[i].charAt(j);
                 f = j;
                 break;
