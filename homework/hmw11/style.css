@@ -1,0 +1,48 @@
+.trapezoid {
+    border-bottom: 18px solid lightseagreen;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    height: 0;
+    width: 54px;
+}
+.oval {
+    height: 100px;
+    width: 50px;
+    background-color: indianred;
+    border-radius: 50%;
+}
+.circle {
+    height: 50px;
+    width: 50px;
+    background-color: royalblue;
+    border-radius: 50%;
+}
+.square {
+    height: 50px;
+    width: 50px;
+    background-color: mediumvioletred;
+}
+.triangle-up {
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 50px solid rebeccapurple;
+}
+.animate {
+    animation: 3s infinite alternate slidein;
+}
+@keyframes slideInRight {
+    from {
+        transform: translate3d(0%, 0, 0);
+        visibility: visible;
+    }
+
+    to {
+        transform: translate3d(2500%, 0, 0);
+    }
+}
+
+.animate {
+    animation-name: slideInRight;
+}
