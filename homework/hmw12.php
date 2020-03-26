@@ -61,10 +61,7 @@ echo $array6[1][0];
 //Duotas objektas {js: ['jQuery', 'Angular'], php: 'hello', css: 'world'}. Parodykite žodį jQuery.
 <br>
 <?php
-$js=array("jQuery", "Angular");
-$php="hello";
-$css="world";
-$rArray = array($js, $php, $css);
+$rArray=array("js" => ["jQuery", "Angular"], "php" => "hello", "css" => "world");
 echo $rArray[0][0];
 ?>
 <br>
