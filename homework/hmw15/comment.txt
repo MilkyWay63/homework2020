@@ -1,0 +1,14 @@
+[
+    {
+        "name": "Anna",
+        "email": "email@email.com",
+        "comment": "1 kometaras",
+        "time": "2020-04-04 18:52:53"
+    },
+    {
+        "name": "Lina",
+        "email": "email@email.com",
+        "comment": "2 komentaras",
+        "time": "2020-04-04 18:53:15"
+    }
+]
