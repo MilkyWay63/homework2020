@@ -1,0 +1,41 @@
+#chessboardm {
+    background-image: url("../pictures/boxes.png");
+    background-repeat: repeat;
+    width:250px ;
+    height: 950px;
+}
+.pract1 input{
+    z-index: 9999;
+    position: relative;
+    font-size: 28px;
+    letter-spacing: 3px;
+    top: 3px;
+    padding-left: 2px;
+    margin-left: 3px;
+    color: darkblue;
+    font-weight: bold;
+    width: 300px;
+}
+.pract1 {
+    height: 32px;
+    margin-left: 5px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+.label1 {
+    color: darkblue;
+    font-size: 24px;
+    font-family: "Comic Sans MS", serif;
+    font-weight: bold;
+}
+#answer {
+    color: darkblue;
+    font-weight: bold;
+    width: 300px;
+    font-size: 28px;
+    letter-spacing: 3px;
+}
+
+
+

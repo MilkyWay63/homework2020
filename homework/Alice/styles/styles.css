@@ -1,0 +1,35 @@
+.chessboard {
+    width: 820px;
+    height: 340px;
+    margin: 10px;
+
+}
+.black {
+    float: left;
+    width: 80px;
+    height: 80px;
+    background-color: royalblue;
+    font-size:50px;
+    color: white;
+    text-align:center;
+    display: table-cell;
+    vertical-align:middle;
+
+}
+.whity {
+     float: left;
+     width: 80px;
+     height: 80px;
+     background-color: #fff;
+     font-size: 50px;
+     text-align: center;
+     display: table-cell;
+     vertical-align: middle;
+ }
+
+.mygtukas {
+    color: darkred;
+    font-size: 20px;
+    font-family: "Comic Sans MS", serif;
+    font-weight: bolder;
+}

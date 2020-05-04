@@ -1,0 +1,13 @@
+#chessboardm, #chessboardm1, #chessboardm2
+{
+    background-image: url("../pictures/boxes.png");
+    background-repeat: repeat;
+    width:250px ;
+    height: 950px;
+}
+#chessboardm3 {
+    background-image: url("../pictures/boxes.png");
+    background-repeat: repeat;
+    width:250px ;
+    height: 950px;
+}
